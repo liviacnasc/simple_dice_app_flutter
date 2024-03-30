@@ -41,7 +41,6 @@ class _DiceChooserState extends State<DiceChooser> {
       Column(
         mainAxisAlignment: MainAxisAlignment.center,
       children: [
-          const Text("Pick dices", style: TextStyle(color: Colors.white, fontSize: 24)),
           DiceSelector(onDiceChanged: onDiceChanged),
          _diceInfo(),
       ]);

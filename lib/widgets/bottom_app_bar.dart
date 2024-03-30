@@ -34,7 +34,7 @@ class _BottomAppBarWidgetState extends State<BottomAppBarWidget> {
             child: SizedBox(
               height: 60,
               child: IconButton(
-                icon: const Icon(Icons.menu),
+                icon: const Icon(Icons.info),
                 onPressed: () => onTabSelected(const ConfigScreen()),
               ),
             ),

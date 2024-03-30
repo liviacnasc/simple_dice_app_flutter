@@ -25,23 +25,31 @@ class RollResultPage extends StatelessWidget {
       ),
       backgroundColor: const Color(0xED161412),
       body: Center(
-          child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: <Widget>[
-          Text(
-            total,
-            style: const TextStyle(fontSize: 36, color: Colors.white),
-          ),
-          Text(
+          child: _resultBody()
+        ),
+    );
+  }
+
+  Widget _resultBody(){
+    return Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        const Text("TOTAL"),
+        Text(
+          total,
+          style: const TextStyle(fontSize: 76, color: Colors.white),
+        ),
+        const Text("RESULTS"),
+        Text(
             dicesRolls,
-            style: const TextStyle(fontSize: 36, color: Colors.white),
+            style: const TextStyle(fontSize: 16, color: Colors.white),
           ),
-          Text(
+        const Text("DICES ROLLED"),
+        Text(
             dicesRolled,
-            style: const TextStyle(fontSize: 36, color: Colors.white),
+            style: const TextStyle(fontSize: 16, color: Colors.white),
           ),
-        ],
-      )),
+      ],
     );
   }
 }
