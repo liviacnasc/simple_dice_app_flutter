@@ -1,0 +1,85 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:6127074027542948983",
+      "lastPropertyId": "6:5731339914214393991",
+      "name": "Roll",
+      "properties": [
+        {
+          "id": "1:6861747737246718971",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5180158241931696555",
+          "name": "total",
+          "type": 6
+        },
+        {
+          "id": "3:3516152857865151792",
+          "name": "modifier",
+          "type": 6
+        },
+        {
+          "id": "5:3366672095144040442",
+          "name": "diceRolls",
+          "type": 27
+        },
+        {
+          "id": "6:5731339914214393991",
+          "name": "dicesRolled",
+          "type": 30
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:5440550847599610692",
+      "lastPropertyId": "4:9055148034604722833",
+      "name": "Dice",
+      "properties": [
+        {
+          "id": "1:6548486006482350699",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3562046963875747983",
+          "name": "sides",
+          "type": 6
+        },
+        {
+          "id": "3:2013997885550601043",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "4:9055148034604722833",
+          "name": "imagePath",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:5440550847599610692",
+  "lastIndexId": "0:0",
+  "lastRelationId": "1:2628760166679973360",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [
+    7149683809759472606
+  ],
+  "retiredRelationUids": [
+    2628760166679973360
+  ],
+  "version": 1
+}
