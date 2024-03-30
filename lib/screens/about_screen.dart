@@ -51,7 +51,7 @@ class ConfigScreen extends StatelessWidget {
                   "How do I contribute with this project?",
                   style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                 ),
-                subtitle: Text("Check Contribution Guidelines on GitHub!"),
+                subtitle: Text("Check the project's GitHub repository!"),
               ),
               Row(
                 mainAxisSize: MainAxisSize.min,
