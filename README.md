@@ -2,7 +2,7 @@
 
 A very simple dice app for tabletop games, made with flutter.
 
-<img src="https://github.com/liviacnasc/simple_dice_app_flutter/assets/images/readme_image.gif" alt="Flutter Simple Dice App" width=50% height=50%>
+<img src="assets/images/readme_gif.gif" alt="Flutter Simple Dice App" width=50% height=50%>
 
 ## Features
 
