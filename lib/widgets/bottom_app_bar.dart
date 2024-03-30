@@ -1,4 +1,4 @@
-import 'package:nice_dice/screens/config_screen.dart';
+import 'package:nice_dice/screens/about_screen.dart';
 import 'package:nice_dice/screens/roll_history.dart';
 import 'package:flutter/material.dart';
 
