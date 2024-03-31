@@ -95,13 +95,6 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Dosis
-      fonts:
-        - asset: assets/font/Dosis-VariableFont_wght.ttf
-          weight: 400 
-    - family: JosefinSans
-      fonts:
-        - asset: assets/font/JosefinSans-VariableFont_wght.ttf
     - family: RedditMono
       fonts:
         - asset: assets/font/RedditMono-VariableFont_wght.ttf        
