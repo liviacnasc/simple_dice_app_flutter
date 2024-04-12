@@ -23,7 +23,6 @@ class _HomePageState extends State<HomePage> {
   List<Dice> dices = [];
 
   void onPressedButton(){
-    print("test");
     if (dices.isNotEmpty) {
       List<int> result = [];
       
