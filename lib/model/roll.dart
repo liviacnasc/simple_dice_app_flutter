@@ -9,7 +9,7 @@ class Roll {
   int total;
   int modifier;
   List<int> diceRolls = [];
-  List<String> dicesRolled = [];
+  List<String> dicesRolled;
 
   Roll({ 
     this.id = 0,

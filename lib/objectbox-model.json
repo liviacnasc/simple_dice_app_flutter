@@ -36,35 +36,6 @@
         }
       ],
       "relations": []
-    },
-    {
-      "id": "2:5440550847599610692",
-      "lastPropertyId": "4:9055148034604722833",
-      "name": "Dice",
-      "properties": [
-        {
-          "id": "1:6548486006482350699",
-          "name": "id",
-          "type": 6,
-          "flags": 1
-        },
-        {
-          "id": "2:3562046963875747983",
-          "name": "sides",
-          "type": 6
-        },
-        {
-          "id": "3:2013997885550601043",
-          "name": "name",
-          "type": 9
-        },
-        {
-          "id": "4:9055148034604722833",
-          "name": "imagePath",
-          "type": 9
-        }
-      ],
-      "relations": []
     }
   ],
   "lastEntityId": "2:5440550847599610692",
@@ -73,10 +44,16 @@
   "lastSequenceId": "0:0",
   "modelVersion": 5,
   "modelVersionParserMinimum": 5,
-  "retiredEntityUids": [],
+  "retiredEntityUids": [
+    5440550847599610692
+  ],
   "retiredIndexUids": [],
   "retiredPropertyUids": [
-    7149683809759472606
+    7149683809759472606,
+    6548486006482350699,
+    3562046963875747983,
+    2013997885550601043,
+    9055148034604722833
   ],
   "retiredRelationUids": [
     2628760166679973360

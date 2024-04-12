@@ -20,22 +20,12 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final List<Dice> dices = [];
-  final List<String> dicesNames = [];
-
-  final roll = ValueNotifier<Roll>(Roll(
-    diceRolls: [],
-    modifier: 0,
-    total: 0,
-    dicesRolled: []
-  ));
+  List<Dice> dices = [];
 
   void onPressedButton(){
+    print("test");
     if (dices.isNotEmpty) {
       List<int> result = [];
-      List<String> dicesRolledText =  List.generate(dices.length, (index) {
-        return dices[index].name;
-      });
       
       int total = 0;
       int modifier = 0;
@@ -45,15 +35,15 @@ class _HomePageState extends State<HomePage> {
         total += random;
       }
       
-      roll.value = Roll(
+      Roll rolled = Roll(
         diceRolls: result,
         total: total + modifier,
         modifier: modifier,
-        dicesRolled: dicesRolledText
+        dicesRolled: dices.map((e) => e.name).toList()
       );
       
-      objectBox.insertRoll(roll.value);
-      Navigator.push(context, MaterialPageRoute(builder: (context) => RollResultPage(roll: roll.value)));
+      objectBox.insertRoll(rolled);
+      Navigator.push(context, MaterialPageRoute(builder: (context) => RollResultPage(roll: rolled)));
     }
 
   }
@@ -63,16 +53,14 @@ class _HomePageState extends State<HomePage> {
   }
 
   void incrementDice(Dice dice){
-    dices.add(dice);
     setState(() {
-      dicesNames.add(dice.name);
+      dices.add(dice);
     });
   }
 
   void decrementDice(){
-    dices.removeLast();
     setState(() {
-      dicesNames.removeLast();
+      dices.removeLast();
     });
   }
 
@@ -92,7 +80,7 @@ class _HomePageState extends State<HomePage> {
         DiceChooser(
         incrementDice: incrementDice,
         decrementDice: decrementDice,),
-        Text("Picked: ${dicesNames.toString()}", style: const TextStyle(fontSize: 11, color: Colors.white),)
+        Text("Picked: ${dices.map((e) => e.name).toString()}", style: const TextStyle(fontSize: 11, color: Colors.white),)
       ],
     );
   }

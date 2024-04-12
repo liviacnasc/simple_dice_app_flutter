@@ -91,32 +91,19 @@ class _DiceSelectorState extends State<DiceSelector> {
               animation: _controller,
               builder: (context, child) {
                 if (!_controller.hasClients || !_controller.position.hasContentDimensions) {
-                  // The PageViewController isn't connected to the
-                  // PageView widget yet. Return an empty box.
+                  
                   return const SizedBox(child: Text("Scroll to start"),);
                 }
 
-              // The integer index of the current page,
-              // 0, 1, 2, 3, and so on
               final selectedIndex = _controller.page!.roundToDouble();
 
-              // The fractional amount that the current filter
-              // is dragged to the left or right, for example, 0.25 when
-              // the current filter is dragged 25% to the left.
               final pageScrollAmount = _controller.page! - selectedIndex;
 
-              // The page-distance of a filter just before it
-              // moves off-screen.
               const maxScrollDistance = _dicesPerScreen / 2.0;
 
-              // The page-distance of this filter item from the
-              // currently selected filter item.
               final pageDistanceFromSelected =
                   (selectedIndex - index + pageScrollAmount).abs();
 
-              // The distance of this filter item from the
-              // center of the carousel as a percentage, that is, where the selector
-              // ring sits.
               final percentFromCenter =
                   1.0 - pageDistanceFromSelected / maxScrollDistance;
 
