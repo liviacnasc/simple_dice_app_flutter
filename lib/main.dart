@@ -26,7 +26,7 @@ class NiceDice extends StatelessWidget {
           colorScheme: const ColorScheme(
             background: Color.fromARGB(255, 22, 22, 22),
             brightness: Brightness.dark,
-            primary: Color(0xFF5603AD),
+            primary: Color(0xFF8200e8),
             onPrimary: Colors.white,
             secondary: Color(0xFFAB5EFD),
             onSecondary: Colors.white,
